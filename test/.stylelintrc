@@ -1,0 +1,6 @@
+{
+  "extends": "../strict",
+  "rules": {
+    "indentation": 2
+  }
+}

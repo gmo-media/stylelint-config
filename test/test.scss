@@ -1,0 +1,11 @@
+.block {
+  display: block;
+
+  &__element {
+    font-size: 1em;
+  }
+
+  &--modifier {
+    color: #fc3;
+  }
+}
