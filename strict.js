@@ -40,10 +40,11 @@ module.exports = {
         // At-rule
         'at-rule-empty-line-before': ['always', {
             'except': ['blockless-group', 'first-nested'],
-            'ignore': ['after-comment']
+            'ignore': ['after-comment'],
+            'ignoreAtRules': ['if', 'else']
         }],
         'at-rule-no-unknown': [true, {
-            'ignoreAtRules': ['at-root', 'content', 'debug', 'each', 'error', 'else', 'extend', 'for', 'if', 'include', 'mixin', 'warn', 'while']
+            'ignoreAtRules': ['at-root', 'content', 'debug', 'each', 'error', 'else', 'extend', 'for', 'function', 'if', 'include', 'mixin', 'warn', 'while']
         }],
 
         // Comment

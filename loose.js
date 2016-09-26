@@ -46,7 +46,9 @@ module.exports = {
         'declaration-block-trailing-semicolon': 'always',
 
         // Block
-        'block-closing-brace-newline-after': 'always',
+        'block-closing-brace-newline-after': ['always', {
+            'ignoreAtRules': ['if', 'else']
+        }],
         'block-closing-brace-newline-before': 'always-multi-line',
         'block-closing-brace-space-before': 'always-single-line',
         'block-opening-brace-newline-after': 'always-multi-line',
