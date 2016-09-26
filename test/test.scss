@@ -1,3 +1,13 @@
+@function hoge($a) {
+  @if $a == 1 {
+    color: #000;
+  } @else if $a == 2 {
+    color: #f00;
+  } @else {
+    color: #00f;
+  }
+}
+
 .block {
   display: block;
 
