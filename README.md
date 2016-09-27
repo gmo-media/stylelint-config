@@ -26,7 +26,7 @@ Please set the indentation. (default: 4)
 ## Rule sets
 
 ### `@gmo-media/stylelint-config/regular`
-* Regular configuration. (main)
+* Regular configuration. (default)
 
 ### `@gmo-media/stylelint-config/strict`
 * Strict configuration.
