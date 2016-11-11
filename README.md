@@ -16,7 +16,7 @@ $ npm install --save-dev stylelint @gmo-media/stylelint-config
 {
   "extends": "@gmo-media/stylelint-config",
   "rules": {
-    "indentation": 2
+    "indentation": 4
   }
 }
 ```

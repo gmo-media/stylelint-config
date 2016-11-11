@@ -17,8 +17,9 @@
 * 別の媒体担当者からの意見を元に、採用するかどうか検討します。
 * 採用したら設定を変更し、マイナーバージョンを上げて公開します。
 
-## stylefmtの利用について
-stylefmtにはextendsが正しく処理されないバグがあるようなので、設定ファイルをJS形式にし、以下のようにして利用してください。
+## 上書きできないルールについて
+stylelint には true しか指定できないルールがいくつかあります。
+false を指定して上書きすることができないため、設定を無効化したい場合は以下のようにしてください。
 
 ```js:stylelint.config.js
 // 共通ルールを読み込む
@@ -26,17 +27,13 @@ var base = require('@gmo-media/stylelint-config');
 
 // ルールを追加・上書きする
 var rules = Object.assign({}, base.rules, {
-    'function-name-case': ['lower', {
-        'ignoreFunctions': "DXImageTransform.Microsoft.gradient"
-    }],
-    'selector-max-compound-selectors': 6,
     'indentation': 4
 });
 
-// ルールを削除する
-delete rules['selector-no-qualifying-type'];
+// true しか指定できないルールを削除する
+delete rules['declaration-no-important'];
 
 module.exports = {
-    'rules': rules
+    rules: rules
 };
 ```
