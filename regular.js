@@ -4,23 +4,19 @@
 module.exports = {
     'rules': Object.assign(require('./loose').rules, {
         // Color
-        'color-no-invalid-hex': true,
+        'color-hex-length': 'short',
+        'color-named': 'never',
 
-        // Function
-        'function-calc-no-unspaced-operator': true,
+        // Font
+        'font-weight-notation': 'named-where-possible',
 
         // Value and Utit
         'number-no-trailing-zeros': true,
-        'string-no-newline': true,
         'length-zero-no-unit': true,
         'time-no-imperceptible': true,
-        'unit-no-unknown': true,
 
         // Shorthand property
         'shorthand-property-no-redundant-values': true,
-
-        // Property
-        'property-no-unknown': true,
 
         // Keyframe declaration
         'keyframe-declaration-no-important': true,
@@ -32,21 +28,19 @@ module.exports = {
         'block-no-empty': true,
 
         // Selector
+        'selector-max-compound-selectors': 5,
+        'selector-no-qualifying-type': [true, {
+            'ignore': ['attribute']
+        }],
         'selector-no-universal': true,
-        'selector-pseudo-class-no-unknown': true,
-        'selector-pseudo-element-no-unknown': true,
         'selector-root-no-composition': true,
-        'selector-type-no-unknown': true,
 
-        // Media feature
-        'media-feature-no-missing-punctuation': true,
+        // stylelint-disable comment
+        'stylelint-disable-reason': 'always-before',
 
         // General / Sheet
-        'no-duplicate-selectors': true,
-        'no-empty-source': true,
-        'no-eol-whitespace': true,
-        'no-extra-semicolons': true,
-        'no-missing-end-of-source-newline': true,
-        'no-unknown-animations': true
+        'max-nesting-depth': [4, {
+            'ignore': ['at-rules-without-declaration-blocks']
+        }]
     })
 };

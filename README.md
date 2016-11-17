@@ -37,10 +37,11 @@ Please set the indentation. (default: 4)
 ## Development
 1. Edit the rules.
 2. `npm test`
-3. `npm version XXX -m 'message'`
-4. `git push origin master`
-5. `git push origin v1.x.x`
-6. `npm publish --access=public`
+3. `git commit`
+4. `npm version XXX`
+5. `git push origin master`
+6. `git push origin v1.x.x`
+7. `npm publish --access=public`
 
 ## License
 

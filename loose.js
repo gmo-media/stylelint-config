@@ -5,14 +5,13 @@ module.exports = {
     'rules': {
         // Color
         'color-hex-case': 'lower',
-        'color-hex-length': 'short',
-        'color-named': 'never',
+        'color-no-invalid-hex': true,
 
         // Font
         'font-family-name-quotes': 'always-where-recommended',
-        'font-weight-notation': 'named-where-possible',
 
         // Function
+        'function-calc-no-unspaced-operator': true,
         'function-comma-newline-after': 'always-multi-line',
         'function-comma-space-after': 'always-single-line',
         'function-comma-space-before': 'never',
@@ -22,7 +21,9 @@ module.exports = {
         'function-parentheses-space-inside': 'never-single-line',
 
         // Value and Utit
+        'string-no-newline': true,
         'unit-case': 'lower',
+        'unit-no-unknown': true,
         'value-keyword-case': 'lower',
 
         // Value list
@@ -32,6 +33,7 @@ module.exports = {
 
         // Property
         'property-case': 'lower',
+        'property-no-unknown': true,
 
         // Declaration
         'declaration-bang-space-after': 'never',
@@ -61,15 +63,14 @@ module.exports = {
         'selector-attribute-operator-space-before': 'never',
         'selector-combinator-space-after': 'always',
         'selector-combinator-space-before': 'always',
-        'selector-max-compound-selectors': 5,
         'selector-max-empty-lines': 0,
-        'selector-no-qualifying-type': [true, {
-            'ignore': ['attribute']
-        }],
         'selector-pseudo-class-case': 'lower',
+        'selector-pseudo-class-no-unknown': true,
+        'selector-pseudo-element-no-unknown': true,
         'selector-pseudo-class-parentheses-space-inside': 'never',
         'selector-pseudo-element-case': 'lower',
         'selector-type-case': 'lower',
+        'selector-type-no-unknown': true,
 
         // Selector list
         'selector-list-comma-newline-after': 'always-multi-line',
@@ -79,6 +80,7 @@ module.exports = {
         // Media feature
         'media-feature-colon-space-after': 'always',
         'media-feature-colon-space-before': 'never',
+        'media-feature-no-missing-punctuation': true,
         'media-feature-parentheses-space-inside': 'never',
         'media-feature-range-operator-space-after': 'always',
         'media-feature-range-operator-space-before': 'always',
@@ -93,13 +95,13 @@ module.exports = {
         'at-rule-name-space-after': 'always-single-line',
         'at-rule-semicolon-newline-after': 'always',
 
-        // stylelint-disable comment
-        'stylelint-disable-reason': 'always-before',
-
         // General / Sheet
         'max-empty-lines': 1,
-        'max-nesting-depth': [4, {
-            'ignore': ['at-rules-without-declaration-blocks']
-        }]
+        'no-duplicate-selectors': true,
+        'no-empty-source': true,
+        'no-eol-whitespace': true,
+        'no-extra-semicolons': true,
+        'no-missing-end-of-source-newline': true,
+        'no-unknown-animations': true
     }
 };
