@@ -13,7 +13,7 @@ module.exports = {
         // Value and Utit
         'number-no-trailing-zeros': true,
         'length-zero-no-unit': true,
-        'time-no-imperceptible': true,
+        'time-min-milliseconds': 100,
 
         // Shorthand property
         'shorthand-property-no-redundant-values': true,
@@ -33,14 +33,10 @@ module.exports = {
             'ignore': ['attribute']
         }],
         'selector-no-universal': true,
-        'selector-root-no-composition': true,
-
-        // stylelint-disable comment
-        'stylelint-disable-reason': 'always-before',
 
         // General / Sheet
         'max-nesting-depth': [4, {
-            'ignore': ['at-rules-without-declaration-blocks']
+            'ignore': ['blockless-at-rules']
         }]
     })
 };

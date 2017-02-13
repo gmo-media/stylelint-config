@@ -4,7 +4,7 @@
   "version": "1.2.0",
   "author": "GMO Media,Inc.",
   "devDependencies": {
-    "stylelint": "^7.5.0"
+    "stylelint": "^7.8.0"
   },
   "files": [
     "loose.js",
@@ -15,7 +15,7 @@
   "license": "MIT",
   "main": "regular.js",
   "peerDependencies": {
-    "stylelint": "^7.2.0"
+    "stylelint": "*"
   },
   "repository": "https://github.com/gmo-media/stylelint-config",
   "scripts": {

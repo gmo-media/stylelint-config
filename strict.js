@@ -9,9 +9,6 @@ module.exports = {
         'function-url-quotes': 'always',
         'function-whitespace-after': 'always',
 
-        // Custom property
-        'custom-property-no-outside-root': true,
-
         // Declaration
         'declaration-colon-newline-after': 'always-multi-line',
 
@@ -19,7 +16,6 @@ module.exports = {
         'declaration-block-no-duplicate-properties': [true, {
             'ignore': ['consecutive-duplicates']
         }],
-        'declaration-block-no-ignored-properties': true,
         'declaration-block-no-shorthand-property-overrides': true,
         'declaration-block-single-line-max-declarations': 1,
 
@@ -28,18 +24,9 @@ module.exports = {
         'selector-max-specificity': '0,3,0',
         'selector-no-id': true,
 
-        // Root rule
-        'root-no-standard-properties': true,
-
-        // Rule
-        'rule-non-nested-empty-line-before': ['always-multi-line', {
-            'except': ['after-single-line-comment'],
-            'ignore': ['after-comment']
-        }],
-
         // At-rule
         'at-rule-empty-line-before': ['always', {
-            'except': ['blockless-group', 'first-nested'],
+            'except': ['blockless-after-blockless', 'first-nested'],
             'ignore': ['after-comment'],
             'ignoreAtRules': ['if', 'else']
         }],
@@ -55,13 +42,6 @@ module.exports = {
         'comment-whitespace-inside': 'always',
 
         // General / Sheet
-        'indentation': 4,
-        'no-browser-hacks': [true, {
-            'browsers': 'last 2 versions'
-        }],
-        'no-invalid-double-slash-comments': true,
-        'no-unsupported-browser-features': [true, {
-            'browsers': 'last 2 versions'
-        }]
+        'no-invalid-double-slash-comments': true
     })
 };
