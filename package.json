@@ -1,7 +1,7 @@
 {
   "name": "@gmo-media/stylelint-config",
   "description": "stylelint config for gmo-media.",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": "GMO Media,Inc.",
   "devDependencies": {
     "stylelint": "^7.8.0"
