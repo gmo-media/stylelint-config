@@ -28,11 +28,11 @@ Please set the indentation. (default: 4)
 ### `@gmo-media/stylelint-config/regular`
 * Regular configuration. (default)
 
-### `@gmo-media/stylelint-config/strict`
-* Strict configuration.
-
 ### `@gmo-media/stylelint-config/loose`
 * Loose configuration.
+
+### `@gmo-media/stylelint-config/extra`
+* Extra configuration.
 
 ## Development
 1. Edit the rules.
