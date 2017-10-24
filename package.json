@@ -1,10 +1,10 @@
 {
   "name": "@gmo-media/stylelint-config",
   "description": "stylelint config for gmo-media.",
-  "version": "1.2.1",
+  "version": "2.0.0",
   "author": "GMO Media,Inc.",
   "devDependencies": {
-    "stylelint": "^7.8.0"
+    "stylelint": "~8.2.0"
   },
   "files": [
     "loose.js",
@@ -15,10 +15,13 @@
   "license": "MIT",
   "main": "regular.js",
   "peerDependencies": {
-    "stylelint": "*"
+    "stylelint": "~8.2.0"
   },
   "repository": "https://github.com/gmo-media/stylelint-config",
   "scripts": {
-    "test": "stylelint --config test/.stylelintrc --syntax scss \"test/*.scss\""
+    "test": "stylelint --config test/stylelintrc.json --syntax scss --fix test/*.scss"
+  },
+  "dependencies": {
+    "stylelint-config-standard": "^17.0.0"
   }
 }
