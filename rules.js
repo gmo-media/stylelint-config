@@ -243,7 +243,9 @@ const Rules = {
 
   // Block
   'block-closing-brace-empty-line-before': [STANDARD],
-  'block-closing-brace-newline-after': [STANDARD],
+  'block-closing-brace-newline-after': [REGULAR, ['always', {       // override standard
+    ignoreAtRules: ['if', 'else']
+  }]],
   'block-closing-brace-newline-before': [STANDARD],
   'block-closing-brace-space-after': [STANDARD],
   'block-closing-brace-space-before': [STANDARD],
