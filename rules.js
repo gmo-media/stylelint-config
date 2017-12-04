@@ -24,6 +24,7 @@ const Rules = {
 
   // Font family
   'font-family-no-duplicate-names': [RECOMMENDED],
+  'font-family-no-missing-generic-family-keyword': [RECOMMENDED],
 
   // Function
   'function-calc-no-unspaced-operator': [RECOMMENDED],
@@ -75,6 +76,7 @@ const Rules = {
 
   // General / Sheet
   'no-descending-specificity': [UNUSE],
+  'no-duplicate-at-import-rules': [RECOMMENDED],
   'no-duplicate-selectors': [LOOSE, true],
   'no-empty-source': [RECOMMENDED],
   'no-extra-semicolons': [RECOMMENDED],

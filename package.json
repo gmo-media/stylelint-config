@@ -4,7 +4,7 @@
   "version": "2.0.2",
   "author": "GMO Media,Inc.",
   "devDependencies": {
-    "stylelint": "~8.2.0"
+    "stylelint": "^8.3.1"
   },
   "files": [
     "*.js",
@@ -13,13 +13,13 @@
   "license": "MIT",
   "main": "regular.js",
   "peerDependencies": {
-    "stylelint": "~8.2.0"
+    "stylelint": "^8.3.1"
   },
   "repository": "https://github.com/gmo-media/stylelint-config",
   "scripts": {
     "test": "stylelint --config test/stylelintrc.json --syntax scss --fix test/*.scss"
   },
   "dependencies": {
-    "stylelint-config-standard": "^17.0.0"
+    "stylelint-config-standard": "^18.0.0"
   }
 }
