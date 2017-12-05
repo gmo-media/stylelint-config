@@ -2,7 +2,7 @@
 
 const STANDARD    = 99;
 const RECOMMENDED = 99;
-const UNUSE       = 99;
+const UNUSE       = -1;
 const LOOSE       = 0;
 const REGULAR     = 1;
 const EXTRA       = 2;
@@ -336,7 +336,7 @@ function levelFilter(level) {
 }
 
 function ruleReducer(result, rule) {
-  result[rule] = Rules[rule][1];
+  result[rule] = Rules[rule][1] || null;
   return result;
 }
 
