@@ -65,7 +65,23 @@ const Rules = {
   'at-rule-no-unknown': [LOOSE, [true, {                    // override recommended
     'ignoreAtRules': [
       // Sass
-      'at-root', 'content', 'debug', 'each', 'error', 'else', 'extend', 'for', 'function', 'if', 'include', 'mixin', 'return', 'warn', 'while',
+      'at-root',
+      'content',
+      'debug',
+      'each',
+      'error',
+      'else',
+      'extend',
+      'for',
+      'forward',
+      'function',
+      'if',
+      'include',
+      'mixin',
+      'return',
+      'use',
+      'warn',
+      'while',
       // postcss-normalize
       'import-normalize'
     ]
